@@ -14,7 +14,14 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`
   },
   description: site.description,
-  applicationName: site.name
+  applicationName: site.name,
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" }
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/apple-touch-icon.svg"
+  }
 };
 
 export const viewport: Viewport = {
