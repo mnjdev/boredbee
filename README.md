@@ -42,7 +42,7 @@ NEXT_PUBLIC_ADSENSE_IN_ARTICLE_SLOT=
 NEXT_PUBLIC_ADSENSE_MULTIPLEX_SLOT=
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the production domain before deployment so canonical URLs, sitemap, and schema are correct.
+Set `NEXT_PUBLIC_SITE_URL` to the production domain before deployment so canonical URLs, sitemap, and schema are correct. Production is configured for `https://boredbee.fun`.
 
 ## Ads
 
@@ -85,3 +85,15 @@ Ad slot IDs go in environment variables:
 4. Deploy.
 
 The app uses standard Next.js output and is Vercel-ready.
+
+## Deploy to Netlify
+
+The repo includes `netlify.toml` with:
+
+```toml
+[build]
+command = "npm run build"
+publish = ".next"
+```
+
+Netlify detects Next.js automatically and uses its Next runtime.
