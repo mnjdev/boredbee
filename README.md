@@ -34,7 +34,7 @@ npm run build
 Copy `.env.example` to `.env.local`:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://example.com
+NEXT_PUBLIC_SITE_URL=https://boredbee.fun
 NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-XXXXXXXXXXXXXXXX
 NEXT_PUBLIC_ADSENSE_ENABLED=false
 NEXT_PUBLIC_ADSENSE_DISPLAY_SLOT=
@@ -93,7 +93,7 @@ The repo includes `netlify.toml` with:
 ```toml
 [build]
 command = "npm run build"
-publish = ".next"
+publish = "out"
 ```
 
-Netlify detects Next.js automatically and uses its Next runtime.
+BoredBee uses Next.js static export for Netlify, so the generated `out` directory is served directly.

@@ -1,9 +1,9 @@
 [build]
 command = "npm run build"
-publish = ".next"
+publish = "out"
 
 [build.environment]
 NEXT_PUBLIC_SITE_URL = "https://boredbee.fun"
 NEXT_PUBLIC_ADSENSE_ENABLED = "false"
 
-# Netlify automatically detects Next.js and uses the @netlify/next runtime.
+# BoredBee is static-first, so Netlify serves the exported `out` directory.

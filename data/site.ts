@@ -17,7 +17,7 @@ export const site = {
   tagline: "Tiny games, smart tools, quick fixes for bored brains.",
   description:
     "BoredBee is a lightweight no-login website for quick games, daily challenges, party prompts, useful calculators, and beginner-friendly explainers.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://boredbee.fun",
   email: "hello@boredbee.example"
 };
 

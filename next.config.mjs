@@ -1,16 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
-  poweredByHeader: false,
-  async redirects() {
-    return [
-      {
-        source: "/explain/how-to-use-borebee",
-        destination: "/explain/how-to-use-boredbee",
-        permanent: true
-      }
-    ];
-  }
+  poweredByHeader: false
 };
 
 export default nextConfig;
