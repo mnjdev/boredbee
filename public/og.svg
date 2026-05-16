@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbf8ef"/>
+  <circle cx="190" cy="185" r="90" fill="#f7c948"/>
+  <path d="M153 168c0-43 35-72 87-72s87 29 87 72v29h32c30 0 55 25 55 55 0 20-12 39-29 48l-55 28c-12 50-46 86-90 86s-78-36-90-86l-55-28c-17-9-29-28-29-48 0-30 25-55 55-55h32v-29Zm44 15h86v-15c0-19-16-29-43-29s-43 10-43 29v15Zm0 58v29h86v-29h-86Zm6 73c9 29 23 43 37 43s28-14 37-43h-74Z" fill="#151922"/>
+  <text x="110" y="520" font-family="Arial, sans-serif" font-size="96" font-weight="900" fill="#151922">BoredBee</text>
+  <text x="110" y="575" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#4c4637">Tiny games, smart tools, quick fixes for bored brains.</text>
+</svg>

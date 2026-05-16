@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 48 33% 97%;
+  --foreground: 220 20% 10%;
+  --card: 0 0% 100%;
+  --muted: 45 30% 92%;
+  --border: 43 24% 82%;
+  --accent: 43 95% 55%;
+  --accent-text: 220 20% 10%;
+  --ring: 43 95% 45%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --background: 220 18% 8%;
+    --foreground: 42 36% 94%;
+    --card: 220 16% 12%;
+    --muted: 220 13% 18%;
+    --border: 220 10% 28%;
+    --accent: 43 92% 58%;
+    --accent-text: 220 20% 10%;
+    --ring: 43 92% 58%;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: 220 18% 8%;
+  --foreground: 42 36% 94%;
+  --card: 220 16% 12%;
+  --muted: 220 13% 18%;
+  --border: 220 10% 28%;
+  --accent: 43 92% 58%;
+  --accent-text: 220 20% 10%;
+  --ring: 43 92% 58%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, hsl(var(--accent) / 0.14), transparent 34rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid hsl(var(--ring));
+  outline-offset: 3px;
+}
+
+.honey-grid {
+  background-image:
+    linear-gradient(30deg, hsl(var(--border) / 0.22) 12%, transparent 12.5%, transparent 87%, hsl(var(--border) / 0.22) 87.5%, hsl(var(--border) / 0.22)),
+    linear-gradient(150deg, hsl(var(--border) / 0.22) 12%, transparent 12.5%, transparent 87%, hsl(var(--border) / 0.22) 87.5%, hsl(var(--border) / 0.22));
+  background-position: 0 0, 12px 21px;
+  background-size: 24px 42px;
+}
+
+.prose-lite h2 {
+  margin-top: 2rem;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.prose-lite h3 {
+  margin-top: 1.4rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.prose-lite p,
+.prose-lite li {
+  color: hsl(var(--foreground) / 0.78);
+  line-height: 1.75;
+}
+
+.prose-lite ul,
+.prose-lite ol {
+  padding-left: 1.35rem;
+}
+
+.ad-placeholder {
+  background: repeating-linear-gradient(
+    -45deg,
+    hsl(var(--muted)),
+    hsl(var(--muted)) 10px,
+    hsl(var(--card)) 10px,
+    hsl(var(--card)) 20px
+  );
+}
